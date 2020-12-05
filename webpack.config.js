@@ -24,6 +24,7 @@ module.exports = {
             loader: 'css-loader',
             options: {
               modules: {
+                // css 클래스 이름을 알아볼 수 있게 해주는 설정이다.
                 localIdentName: '[local]--[hash:base64:5]',
               },
             },
@@ -36,7 +37,7 @@ module.exports = {
   devServer: {
     contentBase: path.join(__dirname, "dist"),
     port: 9000,
-    open: true,
+    open: true, // 자동으로 브라우저를 띄운다.
   },
   mode: "development"
 };
